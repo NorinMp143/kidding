@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+}
+
+.div1{
+	display: inline-flex;
+}
+
+a.logo{
+	color: white;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+header{
+	height: 80px;
+	width: 100%;
+	background-color: black;
+	background-attachment: fixed;
+	position: fixed;
+	z-index: 1;
+}
+
+.link1{
+	font-size: 50px;
+	margin-left: 125px;
+}
+
+.link1 a{
+	color: white;
+}
+
+.logo{
+	font-size: 40px;
+	display: none;
+}
+
+.fullSreen{
+	height: 80%;
+	width: 100%;
+	position: relative; 
+}
+
+.sideMenu{
+	width: 20%;
+	height: 90%;
+	position: fixed;
+	top: 80px;
+	overflow: auto;
+	float: left;
+	background-color:  #716866 ;
+}
+
+.sideMenu a{
+	display: block;	
+	font-size: 18px;
+	color: white;
+}
+
+.dropDown{
+	padding: 10px;
+	
+}
+
+.againDrop{
+	display: none;
+	background-color: #8c7e7b ;
+
+}
+
+/*.dropDown:hover .againDrop{
+	display: block;
+}*/
+
+.againDrop a{
+	border-bottom: 1px solid  rgba(192, 192, 192, 0.9);
+	padding: 10px 5px 10px 0px;
+}
+
+.againDrop span{
+	font-size: 8px;
+}
+
+.contents{
+	width: auto;
+	line-height: 1.8em;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	position: absolute;
+	left: 270px;
+	top: 80px;
+}
