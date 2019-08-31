@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+}
+
+body{
+	background-image: url("bacground1.jpg");
+	background-attachment: fixed;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header{
+	height: 80px;
+	background-color: black;
+	background-attachment: fixed;
+
+}
+
+a.link1{
+	color: white;
+	font-size: 50px;
+}
+
+div.div1{
+	margin-top: 24px;
+}
+
+a.link2{
+	color: white;
+	font-size: 18px;
+	margin: 18px;
+	text-transform: uppercase;
+}
+
+.getready{
+	position: absolute;
+	top: 40%;
+	left: 32%;
+	
+
+}
+
+.head1 h1{
+	font-size: 60px;
+	text-shadow: 2px 2px 4px black;
+}
+
+button.btn1{
+	border-radius: 25px;
+	width:400px;
+	height: 60px;
+	margin: 10px 0px 4px 74px;
+	color: black;
+	background: linear-gradient(to right,red,blue,green);
+}

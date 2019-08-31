@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My New Project</title>
+	<link rel='stylesheet' href='cjFile/css/bootstrap.min.css'>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="link1">PROJECT4U</a>
+			<div class="float-right div1">
+				<a href="#" class="link2">about us</a>
+				<a href="#" class="link2">contact us</a>
+			</div>
+		</div>
+	</header>
+	<div class="getready">
+		<div class="head1">
+			<center class="text-white">
+				<h1>WELCOME TO HERE</h1>
+				<span>The world's #1 location platform</span>
+			</center>
+		</div>
+		<button class="btn1">GET STARTED</button>
+		<center><div id="slider"></div></center>
+	</div>
+
+	<script>
+	var i=0;
+	var a=[];
+	a[0]="GET ELEMENT BY ID";
+	a[1]="WINDOWS WRITE";
+	a[2]='CONSOLE LOG AND PROMPT';
+	var time = 1000;
+
+	function fun(){
+		document.getElementById("slider").innerHTML=a[i];
+		if(i<a.length-1){
+		i=i+1;
+		}
+		else{
+		i=0
+		}
+		setTimeout('fun()',time)
+		}
+		fun();
+
+		/*for(i=0;i<3;i++){
+			document.getElementById('3').src=a[i];
+			holdon(3000);
+		}*/
+	</script>
+</body>
+</html>
