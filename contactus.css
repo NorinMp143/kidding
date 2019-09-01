@@ -93,6 +93,10 @@ a.link1{
 	transform: translateX(-50%);
 }
 
+.print{
+  text-align: justify;	
+}
+
 .input-field{
 	margin-bottom: 20px;
 	width: 100%;
@@ -127,18 +131,49 @@ a.link1{
 	
 }
 
-.contact-me, .print{
-}
-
-.contact-me{
-}
-
-.print{
-}
 
 .contact-field::placeholder{
 	color: red;
 	font-weight: bold;
 	font-size: 13px;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 320px){
+	.div5{
+		display: block;
+	}
+	.links{
+		width: 100%;
+	   height: auto;
+	   padding: 4px;
+	}
+	.img1, .img2, .img3{
+	display: inline-block;
+	margin: 0px;
+	}
+	.img1 img, .img2 img, .img3 img{
+		height: 90px;
+		width: 70px;	
+  }
+	.message::before{
+		content: '';
+		display: inline-block;
+		width: 80%;
+		height: 3px;
+		left: 50%;
+		
+		position: absolute;
+		background-color: black;
+		transform: translateX(-50%);
+	}
+	.message{
+		width: 100%;
+	  padding: 4px;
+	}
+	.input-field{
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
+	
 }
