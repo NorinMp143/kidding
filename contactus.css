@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #23ff32;	
+}
+
+header{
+	height: 80px;
+	background-color: black;
+	background-attachment: fixed;
+
+}
+
+.c1{
+	
+}
+
+a.link1{
+	color: white;
+	font-size: 50px;
+}
+
+.main-container{
+	background-color: #23ff32;
+}
+
+.about{
+	margin-top: 50px;
+	height: 70px;
+	position: relative;
+}
+.about-title{
+
+}
+.about-title::after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 160px;
+	height: 3px;
+	background-color: red;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 2px;
+}
+
+/*.div1 .div2, .div3{
+
+}*/
+
+.div4{
+	position: relative;
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	
+}
+
+.div5{
+	width: 100%;
+	height: auto;
+	display: inline-flex;
+	margin: 0;
+	position: absolute;
+	padding-top: 30px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.message{
+	width: 50%;
+	padding: 0 100px 0 50px;
+}
+
+.message::before{
+	content: '';
+	display: inline-block;
+	width: 3px;
+	height: 80%;
+	left: 50%;
+	position: absolute;
+	background-color: black;
+	transform: translateX(-50%);
+}
+
+.input-field{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.input-field .contact-field{
+	width: 100%;
+	padding: 3px 10px;
+}
+
+.text-area textarea{
+	width: 100%;
+	background-color: #ECF0F1;
+}
+
+.links{
+	width: 50%;
+	height: auto;
+	padding: 0 50px 0 100px;
+	
+}
+
+.img1, .img2, .img3{
+	display: inline-block;
+	margin: 10px;
+	
+}
+
+.img1 img, .img2 img, .img3 img{
+	height: 100px;
+	width: 90px;
+	
+}
+
+.contact-me, .print{
+}
+
+.contact-me{
+}
+
+.print{
+}
+
+.contact-field::placeholder{
+	color: red;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
