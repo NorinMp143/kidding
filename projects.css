@@ -23,6 +23,23 @@ a{
     flex-wrap: wrap;
     align-content: center;
 }
+.head-drop-links{
+    display: none;
+    border: none;
+    padding: 0px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right!important;
+}
+.head-drop-links:hover{
+    background-color: #ff8000;
+}
+.head-drop-links .material-icons{
+    font-size: 28px;
+}
+.head-drop-links:hover .material-icons{
+    color: #fff;
+}
 .header-links{
     margin-left: auto;
 }
@@ -94,3 +111,184 @@ a{
         width: auto;height: 100%;
     }
 }
+
+/*-------------------pro.html-----------------------*/
+.body-fixed{
+    position: fixed;
+    width: 100%;
+}
+.super-container{
+    
+}
+.main-container{
+    
+}
+.pro-content{
+    width: 100%;
+    display: flex;
+}
+.pro-content .project-show{
+    background-color: #020818;
+    padding: 50px 40px;
+}
+.pro-show-btn{
+    background-color: #fff;
+    color: #020818;
+}
+.pro-show-btn span.pro-show-title{
+    
+}
+.pro-show-btn span i{
+    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.pro-show-btn span i:nth-child(2){
+    margin-left: -18px;
+}
+.pro-show-btn span i:nth-child(3){
+    margin-left: -18px;
+}
+.pro-content .sidebar{
+    width: 30%;
+    background-color: #020818;
+    height: 100vh;
+    overflow: auto;
+}
+.pro-content .pro-details{
+    width: 70%;
+    background: rgba(2,10,23,0.8);
+    z-index: -1;
+}
+.sideHead{
+    padding: 15px 0 15px 20px;
+    box-shadow: -73px 0px 6px #fff;
+}
+.pro-language{
+    color: #fff;
+    font-size: 25px;
+}
+.project-name{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    box-shadow: 0px -1px 1px #fff;
+}
+.pro-drop{
+    background-color: #29303b;
+}
+.pro-drop a{
+    color: yellowgreen;
+    display: block;
+    padding: 15px 20px 15px 20px;
+    box-shadow: 0px -1px 1px #fff;
+}
+.rating{
+    float: right;
+}
+.disable-overflow{
+    height: 200px;
+}
+#hangman-pro-drop,#tourist-pro-drop,#sca-pro-drop,#calender-pro-drop{
+    display:none;
+}
+
+.pro-back{
+    width: 100%;height: 100%;
+    display: block;
+    position: relative;
+}
+.pro-back::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    z-index: -1;
+    opacity: 0.8;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 575.98px) { 
+    .header-brand{
+        display: flex;width: 100%;
+    }
+    .head-drop-links{
+        display: block;
+        float: right;margin-left: auto;
+    }
+    #header-links{
+        display: none;
+    }
+    .header-links{
+        padding: 20px;
+        width: 185px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        right: 0;
+        bottom: 0;
+        background: #ff8000;
+        animation: anim 1s; 
+    }
+    @keyframes anim {
+         0%{
+            right: -185px;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    .header-links a{
+        display: block;
+    }
+    .header-links a{
+        padding: 0 10px;
+        background-color: #fff;
+        color: #008000;
+        margin-bottom: 10px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 5px solid #008000;
+    }
+    .header-links a:hover{
+        border-bottom: none;
+        background-color: #008000;
+        color: #fff;
+        border-left: 5px solid #fff;
+    }
+    .pro-content{
+        display: block;
+    }
+    #sidebar{
+        display: none;
+    }
+    .pro-content .sidebar{
+        width: 185px;
+    }
+    .pro-content .pro-details{
+        width: 100%;
+        /*! height: 100%; */
+        height: 100vh;
+    }
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/*/ Large devices (desk992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/*/ Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
