@@ -1,0 +1,161 @@
+/*header{
+	background-color: #52be80;
+}
+
+.c1{
+	height: 50px;
+	padding-top: 5px;
+}
+
+.c1 h2{
+	text-transform: uppercase;
+	text-align: center;
+}*/
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color:  #2e4053;
+}
+
+header{
+	height: 80px;
+	background-color: black;
+	background-attachment: fixed;
+}
+
+a.link1{
+	color: white;
+	font-size: 50px;
+}
+
+.main-container{
+	height: 80vh;
+	width: 100%;
+	position:relative;
+}
+
+.head-term h3{
+	color:  #251917;
+	text-transform: uppercase;
+}
+
+.div-head, .div1, .div2, .div3{
+	padding: 10px;
+}
+
+.div-head{
+	background-color: #52Ab36;
+	position: absolute;
+	left: 16%;
+	top: 8%;
+	right: 16%;
+	bottom: 0%;
+	box-shadow: 5px 5px #2e4053;
+}
+
+.div1{
+	background-color: #52be80;
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	right: 2%;
+	bottom: 2%;
+	box-shadow: 5px 5px #52Ab36;
+}
+
+.div2{
+	background-color: #D0D1D2;
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	right: 2%;
+	bottom: 2%;
+	box-shadow: 5px 5px #52be80;
+}
+
+.div3{
+	background-color: white;
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	right: 2%;
+	bottom: 2%;
+	box-shadow: 5px 5px #D0D1D2;
+	text-align: justify;
+}
+
+
+@media screen and (max-width: 575.98px){
+.head-term h3{
+		font-size: 22px;
+		color:  #251917;
+		text-transform: uppercase;
+	}
+a.link1{
+	margin-left: 35px;
+}
+.main-container{
+		height: 122vh;
+		width: 100%;
+		position:relative;
+	}
+.contents{
+		font-size: 18px;
+		line-height: 21px;
+	}
+.div-head{
+		background-color: #52Ab36;
+		position: absolute;
+		left: 6%;
+		top: 3%;
+		right: 6%;
+		bottom: 3%;
+		box-shadow: 5px 5px #2e4053;
+	}
+}
+
+/*Small devices(landscape phones, 576 and up)*/
+@media (min-width: 576px) and (max-width: 767.98){
+	.head-term h3{
+	font-size: 18px;
+	color:  #251917;
+	text-transform: uppercase;
+}
+.main-container{
+	height: 120vh;
+	width: 100%;
+	position:relative;
+}
+.contents{
+	line-height: 22px;
+	font-family: cursive;
+	}
+	
+	.div-head{
+	background-color: #52Ab36;
+	position: absolute;
+	left: 8%;
+	top: 6%;
+	right: 8%;
+	bottom: 0%;
+	box-shadow: 5px 5px #2e4053;
+}
+}
+
+/*Medium devices(tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98){
+
+}
+
+/*Large deices(desktop, 992 and up)*/
+@media (min-width: 992px) and (max-width: 1199.98){
+
+}
+
+/*Extra large deices(large desktop, 992 and up)*/
+@media (min-width: 1200px){
+
+}
+
