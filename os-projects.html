@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="projects.css">
+    <style>
+        header{
+            width: 100%;
+            background-color: #020818;
+        }
+        .pro-back::after{
+            background: url('os-back.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="body-fixed">
+    <div class="super-container">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="header-brand">
+                        <a href="#" class="brand">Project4U</a>
+                    </div>
+                    <div class="header-links">
+                        <a href="#">C</a>
+                        <a href="#">C++</a>
+                        <a href="#">Python</a>
+                        <a href="#">Operating System</a>
+                        <a href="#">HTML & CSS & JS</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="pro-content">
+                <div class="sidebar">
+                    <div class="sideHead">
+                        <span class="pro-language">OS Projects</span>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" style="box-shadow: none;" onclick="fun('hangman-pro-drop')">Hangman Game</div>
+					    <div class="pro-drop" id="hangman-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+					    </div>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" onclick="fun('tourist-pro-drop')">Tourist</div>
+					    <div class="pro-drop" id="tourist-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+					    </div>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" onclick="fun('sca-pro-drop')">Smart City Application</div>
+					    <div class="pro-drop" id="sca-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+					    </div>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" onclick="fun('calender-pro-drop')">Calender System</div>
+					    <div class="pro-drop" id="calender-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+					    </div>
+                    </div>
+                    <div class="disable-overflow"></div>
+                </div>
+                <div class="pro-details">
+                    <div class="pro-back"></div>
+                    <h1>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
