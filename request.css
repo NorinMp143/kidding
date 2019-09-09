@@ -1,0 +1,165 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	
+}
+
+header{
+	height: 75px;
+	background-color: black;
+	background-attachment: fixed;
+}
+
+a.link1{
+	color: white;
+	font-size: 50px;
+}
+
+.main-container{
+	height: 88vh;
+	width: 100%;
+	background-image: url("req.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	/*background: linear-gradient(to down, #6666ff, #cc00ff);
+	opacity: 1;*/
+	display: inline-flex;
+}
+
+.new-div{
+	position: relative;
+	/*transform: translate(20%,20%);*/
+}
+
+.content-header{
+	position: absolute;
+	top: 35%;
+	left: 10%;
+}
+
+.content-header::after{
+	content: '';
+	/*position: absolute;*/
+	margin: 0 auto;
+	display: block;
+ 	border-bottom: 2px solid  #909497;
+  	width: 120%;
+  	transform: translate(-10%,50%);
+}
+
+.content-header h2{
+	color: white;
+}
+
+.contents{
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	width: 37%;
+}
+
+.contents p{
+	color:  #cacfd2 ;
+	text-align: justify;
+}
+
+.frm{
+	padding: 0 25px 0 25px;
+	
+}
+
+.frm-cs{
+	position: absolute;
+	right: 0%; /**********transform: translate(-50%,-50%);*************/
+	top: 0%;
+	height: auto;
+	width: 30%;
+	background-color: rgba(255,255,255,0.1);
+	transform: translate(-50%,25%);
+	margin-left: 25px;
+	border: 1px solid  rgba(255,255,255,0.4);
+	box-shadow: 1px 1px 2px black;
+}
+
+.frm-head{
+	border: none;
+	margin: 10px;
+}
+
+.frm-head:after{
+	content: '';
+	/*position: absolute;*/
+	margin: 0 auto;
+	display: block;
+ 	border-bottom: 2px solid  #909497;
+  	width: 90%;
+}
+
+.frm-head h2{
+	color: white;
+}
+
+.common{
+	margin: 25px;	
+
+}
+
+.common input, .common select{
+	height: 35px;
+	width: 100%;
+	color: white;
+	background: none;
+}
+
+.common select{
+	border: 2px solid #909497;
+	padding:0 10px;
+	border: 0;
+	outline: 0;
+	border-bottom: 2px solid #909497;
+}
+
+.common input[type="text"], .common input[type="email"]{
+	border: 0;
+	outline: 0;
+    border-bottom: 2px solid #909497;
+     border-width: 60%;
+}
+
+.common textarea{
+	/*margin: 4px;*/
+	width: 100%;
+	color: white;
+	background: transparent;
+	border: 0;
+    /*border-bottom: 1px solid ;*/
+    outline: 2px solid #909497;
+    padding:0 10px;
+}
+
+.but{
+	padding-bottom: 4px;
+	padding-left: 40%;
+}
+
+.common input{
+	padding:0 10px;
+}
+
+.common input::placeholder{
+	font-size: 16px;
+	color: white;
+}
+
+.common textarea::placeholder{
+	font-size: 16px;
+	color: white;
+}
+
+ .message{
+ 	padding: 2px;
+ }
