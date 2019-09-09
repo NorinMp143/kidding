@@ -43,8 +43,8 @@
         </header>
         <div class="main-container">
             <div class="pro-content">
-                <div class="project-show">
-                    <div class="pro-show-btn">
+                <div class="project-show" id="project-show">
+                    <div class="pro-show-btn" onclick="show('sidebar')">
                         <span class="pro-show-title">C++ Projects</span>
                         <span class="pro-icon-design">
                             <i class="material-icons">&#xe314;</i>
@@ -54,8 +54,13 @@
                     </div>
                 </div>
                 <div class="sidebar" id="sidebar">
-                    <div class="sideHead">
+                    <div class="sideHead" id="sideHead">
                         <span class="pro-language">C++ Projects</span>
+                    </div>
+                    <div id="close">
+                        <div class="">
+                            <i class="material-icons" onclick="show('sidebar')">&#xe14c;</i>
+                        </div>
                     </div>
                     <div class="dropDown">
 						<div class="project-name" style="box-shadow: none;" onclick="fun('hangman-pro-drop')">Hangman Game</div>
@@ -92,24 +97,81 @@
                     <div class="disable-overflow"></div>
                 </div>
                 <div class="pro-details">
+                    <div class="proDetailHead">
+                        <div class="proDetailAnim">
+                            <span>
+                                <p>C</p>
+                                <p>+</p>
+                                <p>+</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="requestBtn">
+                        <a href="" class="rq-btn">Request For Project</a>
+                    </div>
+                    <div class="code-main">
+                            <div class="c-small c-s1"></div>
+                            <div class="c-small c-s2"></div>
+                            <div class="c-small c-s3"></div>
+                            <div class="c-small c-s4"></div>
+                            <div class="c-big">
+                                <code>
+                                    <span class="header-file">#include</span><span><</span><span class="c-pink">iostream></span><br><br>
+                                    <span class="c-orange">using </span><span class="keyword">namespace</span><span> std;</span><br><br>
+                                    <span class="comment">// main function -</span><br>
+                                    <span class="comment">// where the execution of program begins</span><br>
+                                    <span class="c-pink">int</span><span> main()</span><br>
+                                    <span>{</span><br>
+                                    <div class="block">
+                                        <span class="comment">// prints hello world</span><br>
+                                        <span>cout<<</span><span class="string">"Hello World"</span><span>;</span><br><br>
+                                        <span class="keyword">return</span><span> 0;</span><br>
+                                    </div>
+                                    <span>}</span>
+                                </code>
+                            </div>
+                        </div>
                     <div class="pro-back"></div>
-                    <h1>
-                    </h1>
+                    
                 </div>
             </div>
         </div>
     </div>
     <script>
         function show(x){
-            icon = document.getElementById('head-down-icon');
             v = document.getElementById(x);
-            if(v.style.display=='block'){
-                v.style.display='none';
-                icon.innerHTML='&#xe313;';
+            if(x=='header-links'){
+                icon = document.getElementById('head-down-icon');
+                if(v.style.display=='block'){
+                    v.style.display='none';
+                    icon.innerHTML='&#xe313;';
+                }
+                else{
+                    v.style.display='block';
+                    icon.innerHTML='&#xe14c;';
+                }
+            }
+            else if(x=='sidebar'){
+                sh = document.getElementById('sideHead');
+                ps = document.getElementById('project-show');
+                sh.style.display='none';
+                if(v.style.display=='block'){
+                    v.style.display='none';
+                    ps.style.display='block';
+                }
+                else{
+                    v.style.display='block';
+                    ps.style.display='none';
+                }
+            }
+        }
+        function fun(y){
+            c = document.getElementById(y);
+            if(c.style.display=='block'){
+                c.style.display='none';
             }
             else{
-                v.style.display='block';
-                icon.innerHTML='&#xe14c;';
+                c.style.display='block';
             }
         }
     </script>
