@@ -209,8 +209,11 @@ a{
 }
 .pro-content .pro-details{
     width: 70%;
+    height: 100vh;
+    overflow: auto;
     position: relative;
     background: rgba(2,10,23,0.8);
+    box-shadow:-2px 1px 25px #fff inset;
 }
 .sideHead{
     padding: 15px 0 15px 20px;
@@ -251,13 +254,16 @@ a{
 #hangman-pro-drop,#tourist-pro-drop,#sca-pro-drop,#calender-pro-drop{
     display:none;
 }
-.proDetailHead {
+.proDetailHead,.proDetailTitle{
 
     padding: 30px;
     font-weight: bolder;
     font-size: 54px;
     letter-spacing: -0.8rem;
 
+}
+.proDetailTitle{
+    letter-spacing: -0.4rem;
 }
 .proDetailAnim{
     padding: 0 20px;
@@ -274,6 +280,7 @@ a{
     display: inline;
 }
 .requestBtn{
+    line-height: 39px;
     height: 40px;
     text-align: center;
 }
@@ -359,6 +366,59 @@ code .keyword{
     opacity: 0.8;
     transform: translate(-50%,-50%);
 }
+
+/*---------------slider----------------*/
+
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+    }
+    div#slider { overflow: hidden;
+        width: 400px;
+        height:300px;
+        margin: 20px auto;
+        border: 15px solid #000;
+        box-shadow: 0px 5px 10px #fff;
+    }
+    div#slider figure img { width: 400px;height:300px; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+    }
+
+/*-------------------------------------*/
+
+/*---------------approach part---------*/
+
+.approach{
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+.hashtag{
+    box-shadow: 0px 2px 15px greenyellow;
+    font-weight: bold;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+    background: #fff;
+}
+
+/*----------------------------------*/
+
 
 @media (max-width: 575.98px) { 
     .header-brand{
