@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="icons.css">
     <style>
         header{
             width: 100%;
             background-color: #020818;
+            box-shadow: -2px 0px 6px #fff inset;
         }
         .pro-back::after{
             background: url('os-back.png');
@@ -25,8 +27,11 @@
                 <div class="header">
                     <div class="header-brand">
                         <a href="#" class="brand">Project4U</a>
+                        <button class="head-drop-links" onclick="show('header-links')">
+                            <i class="material-icons" id="head-down-icon">&#xe313;</i>
+                        </button>
                     </div>
-                    <div class="header-links">
+                    <div class="header-links" id="header-links">
                         <a href="#">C</a>
                         <a href="#">C++</a>
                         <a href="#">Python</a>
@@ -38,9 +43,24 @@
         </header>
         <div class="main-container">
             <div class="pro-content">
-                <div class="sidebar">
-                    <div class="sideHead">
+                <div class="project-show" id="project-show">
+                    <div class="pro-show-btn" onclick="show('sidebar')">
+                        <span class="pro-show-title">OS Projects</span>
+                        <span class="pro-icon-design">
+                            <i class="material-icons">&#xe314;</i>
+                            <i class="material-icons">&#xe314;</i>
+                            <i class="material-icons">&#xe314;</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <div class="sideHead" id="sideHead">
                         <span class="pro-language">OS Projects</span>
+                    </div>
+                    <div id="close">
+                        <div class="">
+                            <i class="material-icons" onclick="show('sidebar')">&#xe14c;</i>
+                        </div>
                     </div>
                     <div class="dropDown">
 						<div class="project-name" style="box-shadow: none;" onclick="fun('hangman-pro-drop')">Hangman Game</div>
@@ -77,12 +97,42 @@
                     <div class="disable-overflow"></div>
                 </div>
                 <div class="pro-details">
+                        <div class="proDetailHead">
+                                <div class="proDetailAnim">
+                                    <span>
+                                        <p>O</p>
+                                        <p>S</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="requestBtn">
+                                <a href="" class="rq-btn">Request For Project</a>
+                            </div>
+                            <div class="code-main">
+                                    <div class="c-small c-s1"></div>
+                                    <div class="c-small c-s2"></div>
+                                    <div class="c-small c-s3"></div>
+                                    <div class="c-small c-s4"></div>
+                                    <div class="c-big">
+                                        <code>
+                                            <span class="header-file">user</span><span>@</span><span class="c-pink">linux</span>:~$
+                                            <span class="c-orange">whoami </span><br><span>&nbsp;user</span><br>
+                                            <span class="comment">// it gives user name</span><br><br>
+                                            <span class="header-file">user</span><span>@</span><span class="c-pink">linux</span>:~$
+                                            <span class="c-orange">pwd </span><br><span>&nbsp;/home/user</span><br>
+                                            <span class="comment">// it gives path where you are now</span><br><br>
+                                            <span class="header-file">user</span><span>@</span><span class="c-pink">linux</span>:~$
+                                            <span class="c-orange">cd </span>folder<br>
+                                            <span class="header-file">user</span><span>@</span><span class="c-pink">linux</span>:~/folder$<br>
+                                            <span class="comment">// it changes your directory</span><br><br>
+                                        </code>
+                                    </div>
+                                </div>
                     <div class="pro-back"></div>
-                    <h1>
-                    </h1>
                 </div>
             </div>
         </div>
     </div>
+    <script src="my.js"></script>
 </body>
 </html>
