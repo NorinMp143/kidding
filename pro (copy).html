@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="icons.css">
+    <style>
+        header{
+            width: 100%;
+            background-color: #020818;
+            box-shadow: -2px 0px 6px #fff inset;
+        }
+        .pro-back::after{
+            background: url('c-back.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="body-fixed">
+    <div class="super-container">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="header-brand">
+                        <a href="#" class="brand">Project4U</a>
+                        <button class="head-drop-links" onclick="show('header-links')">
+                            <i class="material-icons" id="head-down-icon">&#xe313;</i>
+                        </button>
+                    </div>
+                    <div class="header-links" id="header-links">
+                        <a href="#">C</a>
+                        <a href="#">C++</a>
+                        <a href="#">Python</a>
+                        <a href="#">Operating System</a>
+                        <a href="#">HTML & CSS & JS</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="pro-content">
+                <div class="project-show" id="project-show">
+                    <div class="pro-show-btn" onclick="show('sidebar')">
+                        <span class="pro-show-title">C++ Projects</span>
+                        <span class="pro-icon-design">
+                            <i class="material-icons">&#xe314;</i>
+                            <i class="material-icons">&#xe314;</i>
+                            <i class="material-icons">&#xe314;</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <div class="sideHead" id="sideHead">
+                        <span class="pro-language">C Projects</span>
+                    </div>
+                    <div id="close">
+                        <div class="">
+                            <i class="material-icons" onclick="show('sidebar')">&#xe14c;</i>
+                        </div>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" style="box-shadow: none;" onclick="fun('hangman-pro-drop')">Hangman Game</div>
+					    <div class="pro-drop" id="hangman-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+					    </div>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" onclick="fun('tourist-pro-drop')">Tourist</div>
+					    <div class="pro-drop" id="tourist-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+					    </div>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" onclick="fun('sca-pro-drop')">Smart City Application</div>
+					    <div class="pro-drop" id="sca-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+                        </div>
+                    </div>
+                    <div class="dropDown">
+						<div class="project-name" onclick="fun('calender-pro-drop')">Calender System</div>
+					    <div class="pro-drop" id="calender-pro-drop">
+						    <a href="#"><span class="pro">Project 1</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">project 2</span><span class="rating">4.2/5</span></a>
+						    <a href="#"><span class="pro">Project 3</span><span class="rating">4.2/5</span></a>
+					    </div>
+                    </div>
+                    <div class="disable-overflow"></div>
+                </div>
+                <div class="pro-details">
+                    <div class="proDetailTitle">
+                        <div class="proDetailAnim">
+                            <span>
+                                <p>Hangman : Type 1</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="requestBtn">
+                        <a href="" class="rq-btn">Get In Just 50Rs</a>
+                    </div>
+                    <div id="slider">
+                        <figure>
+                            <img src="img/c-back.png" alt>
+                            <img src="img/cpp-back.png" alt>
+                            <img src="img/os-back.png" alt>
+                            <img src="img/py-back.png" alt>
+                            <img src="img/web-back.png" alt>
+                        </figure>
+                    </div>
+                    <div class="approach">
+                        <div class="hashtag">#File Handling</div><div class="hashtag">#Function</div>
+                        <div class="hashtag">#Array</div><div class="hashtag">#Loop</div>
+                        <div class="hashtag">#Conditional Statement</div><div class="hashtag">#Operator</div>
+                    </div>
+                    <div class="disable-overflow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="my.js"></script>
+</body>
+</html>
