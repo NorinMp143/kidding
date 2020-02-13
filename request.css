@@ -21,7 +21,7 @@ a.link1{
 .main-container{
 	height: 88vh;
 	width: 100%;
-	background-image: url("req.jpg");
+	background-image: url("img/background.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
